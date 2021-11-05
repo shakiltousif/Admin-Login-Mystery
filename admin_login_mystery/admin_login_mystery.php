@@ -119,7 +119,7 @@ function admin_login_mystery_options_width_design()
 function admin_login_mystery_options_additional_css_design()
 {
 ?>
-	<textarea id="fancy-textarea" name="admin_login_mystery_options_additional_css"><?php esc_textarea_e(get_option('admin_login_mystery_options_additional_css')) ?></textarea>
+	<textarea id="fancy-textarea" name="admin_login_mystery_options_additional_css"><?php esc_textarea(get_option('admin_login_mystery_options_additional_css')) ?></textarea>
 	<?php
 }
 
