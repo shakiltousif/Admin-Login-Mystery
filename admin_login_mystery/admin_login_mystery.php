@@ -2,7 +2,7 @@
 /*
 Tags: wordpress login, login page design, admin login customize, admin login page customize
 Plugin Name: Admin Login Mystery
-Author: Shakil Dev
+Author: Shakil Ahamed
 Author Uri: https://www.shakilahamed.com
 Description: ADMIN LOGIN MYSTERY gives you a extra functionality design your wp-admin login page.
 Requires at least: 4.0
@@ -185,7 +185,7 @@ add_filter('plugin_action_links_' . plugin_basename(__FILE__) , 'admin_login_mys
 function admin_login_mystery_action_links($actions)
 {
     $actions[] = '<a href="' . esc_url(get_admin_url(null, 'options-general.php?page=admin_login_mystery')) . '">' . __("Settings", "admin-login-mystery") . '</a>';
-    $actions[] = '<a href="https://shakilahamed.com" target="_blank">' . esc_html(__("Support", "admin-login-mystery")) . '</a>';
+    $actions[] = '<a href="https://shakilahamed.com/contact-us" target="_blank">' . esc_html(__("Support", "admin-login-mystery")) . '</a>';
     return $actions;
 }
 
