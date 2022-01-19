@@ -1,1 +1,176 @@
-.admin_login_mystery_options_div{border-bottom:1px solid #000}.admin_login_mystery_options_form .small-text{border-radius:0}.admin_login_mystery_options_form .success{background:#000!important;color:#fff;border-radius:0;border:1px solid #000}.admin_login_mystery_options_form #upload_image_button{padding:5px 20px;border-radius:0;background:#000;border:1px solid #000;color:#fff;margin-top:10px;cursor:pointer}.admin_login_mystery_options_form #upload_image_button:hover{background:#fff;color:#000}
+.admin_login_mystery_options_form .small-text {
+    border-radius: 0;
+}
+.text-4{
+    width: 40px !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+p.p-submit{
+    display: flex;
+    align-items: center;
+}
+p.submit i{
+    animation: loading 0.2s infinite;
+}
+@keyframes loading{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.m-text{
+    background: black;
+    padding: 5px 15px;
+    cursor: pointer;
+    align-items: center;
+}
+.m-text span{
+    margin-top: 5px;
+    color: white;
+}
+.admin_login_mystery_options_form .success {
+    background: #000 !important;
+    color: #fff;
+    border-radius: 0;
+    border: 1px solid #000;
+}
+.admin_login_mystery_options_form .upload_image_button {
+    padding: 5px 20px;
+    border-radius: 0;
+    background: #000;
+    border: 1px solid #000;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.admin_login_mystery_options_form .upload_image_button:hover {
+    background: #fff;
+    color: #000;
+}
+#adminmenumain,
+#wpadminbar,
+#wpfooter {
+    display: none;
+}
+tr {
+    display: grid;
+    
+}
+tbody tr:first-child th {
+    border-top: 0;
+    
+}
+tr th {
+    font-weight: 700;
+    border-top: 1px solid;
+}
+#sectionHead{
+    margin-top: 2em;
+}
+#wpcontent {
+    margin-left: auto !important;
+    padding-right: 20px;
+}
+.left-side .header-element {
+    align-items: center;
+}
+.left-side .header-element a {
+    padding: 10px;
+    color: #000;
+    border: 1px solid;
+}
+.left-side .header-element h2 {
+    padding-left: 10px;
+}
+.left-side p.submit, .left-side a.toggle-panel-button{
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+}
+.left-side a.toggle-panel-button{
+    left: 22%;
+    background: black;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 20px;
+}
+.left-side a.toggle-panel-button:hover{
+    background: white;
+    color: black;
+    border: 1px solid black;
+    transition: .2s;
+}
+.left-side p.submit input {
+    background: #000;
+    color: #fff;
+    border: 0;
+    border-radius: 0;
+}
+.left-side p.submit input:hover {
+    border: 1px solid;
+}
+.left-side.open{
+    width: 20%;
+    z-index: 1;
+}
+.left-side.close{
+    width: 0%;
+    left: -2%;
+}
+.left-side p.submit,.left-side a.toggle-panel-button {
+transition: .5s;
+}
+.left-side {
+    height: 100%;
+    overflow-y: auto;
+    position: absolute;
+    background: #fff;
+}
+.main_editor {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    background: #f0f0f1;
+}
+.right-side {
+    width: 80%;
+    height: 100vh;
+    pointer-events: none;
+    margin-left: auto;
+}
+.column {
+    float: left;
+    padding: 10px;
+    transition: 0.5s;
+}
+.row {
+    display: flex;
+}
+
+
+@media screen and (max-width: 500px) {
+  .left-side.open{
+    width: 90%;
+  }
+  .left-side.close{
+    left: -5%;
+  }
+  .left-side a.toggle-panel-button{
+    margin-bottom: 30px;
+  }
+}
